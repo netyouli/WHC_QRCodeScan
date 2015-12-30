@@ -44,5 +44,5 @@
 
 ```
 ##运行效果
-![image](https://github.com/netyouli/WHC_QRCodeScan/qrcode.png)
+![image](https://github.com/netyouli/WHC_QRCodeScan/blob/master/qrcode.png)
 
