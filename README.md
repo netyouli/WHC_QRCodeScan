@@ -1,31 +1,13 @@
-//
-//  ViewController.m
-//  WHC_QRCodeScanKit(OC)
-//
-//  Created by 吴海超 on 15/12/29.
-//  Copyright © 2015年 吴海超. All rights reserved.
-//
+# WHC_QRCodeScan
 
-#import "ViewController.h"
-#import "WHC_QRCodeVC.h"
-#import "QRCodeWebVC.h"
-#import "MyQRCodeVC.h"
-@interface ViewController () <WHC_QRCodeVCDelegate>
+##  作者:吴海超
+##  联系qq:712641411
 
-@end
+##封装系统API和ZXingObjc 二维码扫描，相册图片二维码识别，二维码生成，开源swift版和oc版
 
-@implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+###OC版使用例子（swift版请自行参考代码）
+```objective-c
 /// 开始扫描二维码
 - (IBAction)clickStart:(id)sender {
     WHC_QRCodeVC * vc = [WHC_QRCodeVC new];
@@ -45,11 +27,11 @@
         [self presentViewController:vc animated:YES completion:nil];
     }else {
         [[[UIAlertView alloc] initWithTitle:value
-                                   message:nil
-                                   delegate:nil
-                          cancelButtonTitle:@"OK"
-                          otherButtonTitles:nil,
-          nil] show];
+                                    message:nil
+                                    delegate:nil
+                                    cancelButtonTitle:@"OK"
+                                    otherButtonTitles:nil,
+                                    nil] show];
     }
 }
 
@@ -59,4 +41,8 @@
     vc.myQRCodeImage = image;
     [self presentViewController:vc animated:YES completion:nil];
 }
-@end
+
+```
+##运行效果
+![image](https://github.com/netyouli/WHC_QRCodeScan/qrcode.png)
+
