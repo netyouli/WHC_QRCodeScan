@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRCodeWebVC" customModule="WHC_QRCodeScanKit" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="o9Y-zS-PTK" id="Vy3-Nq-bKl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9Y-zS-PTK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="o9Y-zS-PTK" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="0Ll-UT-b8t"/>
+                <constraint firstItem="o9Y-zS-PTK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NB2-yU-T8P"/>
+                <constraint firstItem="o9Y-zS-PTK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="boM-Ng-VTC"/>
+                <constraint firstItem="o9Y-zS-PTK" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="nFd-PM-K7r"/>
+            </constraints>
+            <point key="canvasLocation" x="527" y="372"/>
+        </view>
+    </objects>
+</document>
